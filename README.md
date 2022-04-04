@@ -8,7 +8,7 @@ Usage:
 
 Zero step: clone the repo.
 
-First, get the `laravel_session` value of the website cookie, fill it at `./main.mjs` line `3`.
+First, get the `laravel_session` value of the website cookie, fill it at `./config.mjs` line `2`.
 
 Then , run the following commands:
 
