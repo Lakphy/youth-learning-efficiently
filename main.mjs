@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
+import { laravel_session } from "./config.mjs";
 
-const laravel_session = ""; // 引号内输入网站cookie中的laravel_session字段
 const baseUrl =
   "\u0068\u0074\u0074\u0070\u0073\u003a\u002f\u002f\u0073\u0065\u0072\u0076\u0069\u0063\u0065\u002e\u006a\u0069\u0061\u006e\u0067\u0073\u0075\u0067\u0071\u0074\u002e\u006f\u0072\u0067";
 const youth_cookie = `laravel_session=${laravel_session}`;
