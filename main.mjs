@@ -2,10 +2,18 @@ import fetch from "node-fetch";
 import { laravel_session } from "./config.mjs";
 import { getScreen } from "./screen.mjs";
 
+let youth_cookie;
+const [, , param] = process.argv;
+if (param) {
+  console.log("use custom laravel_session\n");
+  youth_cookie = `laravel_session=${param}`;
+} else {
+  console.log("use config laravel_session\n");
+  youth_cookie = `laravel_session=${laravel_session}`;
+}
+
 const baseUrl =
   "\u0068\u0074\u0074\u0070\u0073\u003a\u002f\u002f\u0073\u0065\u0072\u0076\u0069\u0063\u0065\u002e\u006a\u0069\u0061\u006e\u0067\u0073\u0075\u0067\u0071\u0074\u002e\u006f\u0072\u0067";
-const youth_cookie = `laravel_session=${laravel_session}`;
-
 const headers = {
   accept:
     "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
