@@ -16,3 +16,10 @@ Then , run the following commands:
 yarn
 yarn start
 ```
+
+or, you can use
+
+```bash
+yarn
+yarn start <laravel_session>
+```
