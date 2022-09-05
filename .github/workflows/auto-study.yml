@@ -2,7 +2,7 @@ name: auto-study
 
 on:
   schedule:
-    - cron: "42 0 * * MON"
+    # - cron: "42 0 * * MON"
     # 每周一执行workflow
 
   workflow_dispatch: # 手动执行workflow
