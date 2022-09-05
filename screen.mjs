@@ -28,6 +28,7 @@ const downloadFileAsync = (uri, dest) => {
 
 export const getScreen = (youthUrl, chapter) => {
   var src = youthUrl.replace("/index.html", "/images/end.jpg");
+  var src = youthUrl.replace("/m.html", "/images/end.jpg");
   console.log(`截图地址:\n${src}\n`);
   downloadFileAsync(src, `output/${chapter}.jpg`)
     .then((res) => {
